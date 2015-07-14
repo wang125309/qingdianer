@@ -5,4 +5,3 @@ class products(models.Model):
     desc = models.CharField(max_length=128)
     URL = models.URLField()
     file = models.CharField(max_length=256)
-
