@@ -1,0 +1,46 @@
+@import "../../bower_components/normlize.css/normalize.css";
+
+@mixin image_back {
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+#banner {
+	width:100%;
+	height:30vw;
+	background-image:url('/static/image/qingdianer_banner.jpg');
+	background-size:100% auto;
+	@include image_back;
+}
+body {
+	background-color:#c2eaff;
+	color:#333;
+
+}
+a {
+	text-decoration:none;
+}
+.product {
+	width:90%;
+	height:50vw;
+	text-decoration:none;
+	position:relative;
+	margin-left:5%;
+	margin-top:7vw;
+	.banner {
+		width:100%;
+		background-size:100% auto;
+		height:70%;
+		@include image_back;
+	}
+	.title {
+		padding-left:5vw;
+		padding-right:5vw;
+		height:30%;
+		line-height:300%;
+		background-color:#fff;
+		text-align:left;
+		color:#333;
+		font-size:5vw;
+	}	
+}
